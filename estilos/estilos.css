@@ -1,0 +1,47 @@
+body{
+    background:  linear-gradient(rgba(90,85,96,0.8),rgba(70,52,78,0.6)), url(../imagenes/bg_ch.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+header{
+    text-align: center;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+}
+header li{
+    list-style: none;
+}
+
+header a {
+    color: #b9b7b7;
+    text-decoration: none;
+}
+
+
+header a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    z-index: 1;
+}
+
+#publicidad{
+    display: none;
+}
+
+.publi{
+    background-color: rgba(0,0,0,0.5);
+    height: 100px;
+    border: solid white 1px;
+}
+
+.poppubli{
+    width: 100%;
+    opacity: 1;
+    transition: all 2ms;
+}

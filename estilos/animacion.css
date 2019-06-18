@@ -1,0 +1,84 @@
+.rotar{
+    animation-name: mov;
+    animation-duration: 1s;
+}
+
+.aparecer{
+    animation-name: mostrar;
+    animation-duration: 3s;
+}
+
+.haciaDerecha{
+    animation-name: der;
+    animation-duration: 3s;
+}
+
+.haciaIzquierda{
+    animation-name: izq;
+    animation-duration: 2s;
+}
+
+.haciaArriba{
+    animation-name: sube;
+    animation-duration: 4s;
+}
+
+.haciaAbajo{
+    animation-name: bajo;
+    animation-duration: 3s;
+}
+
+@keyframes sube{
+    from{
+        transform: translateY(10000px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+
+@keyframes bajo{
+    from{
+        transform: translateY(-2000px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+
+
+@keyframes mov{
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes mostrar{
+    from{
+        opacity: 0; 
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes der{
+    from{
+        transform: translateX(-2000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes izq{
+    from{
+        transform: translateX(5000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
